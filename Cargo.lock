@@ -728,7 +728,7 @@ dependencies = [
  "ipc-channel",
  "libc",
  "log",
- "mach2",
+ "mach2 0.5.0",
  "nix",
  "rustc-demangle",
  "rustc-hash 2.1.1",
@@ -767,7 +767,7 @@ dependencies = [
  "ipc-channel",
  "libc",
  "log",
- "mach2",
+ "mach2 0.5.0",
  "malloc_size_of_derive",
  "parking_lot",
  "rayon",
@@ -4606,7 +4606,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "617ee6cf8e3f66f3b4ea67a4058564628cde41901316e19f559e14c7c72c5e7b"
 dependencies = [
  "core-foundation-sys",
- "mach2",
+ "mach2 0.4.3",
 ]
 
 [[package]]
@@ -5126,6 +5126,15 @@ name = "mach2"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d640282b302c0bb0a2a8e0233ead9035e3bed871f0b7e81fe4a1ec829765db44"
+dependencies = [
+ "libc",
+]
+
+[[package]]
+name = "mach2"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a1b95cd5421ec55b445b5ae102f5ea0e768de1f82bd3001e11f426c269c3aea"
 dependencies = [
  "libc",
 ]
@@ -8500,7 +8509,7 @@ dependencies = [
  "glow",
  "libc",
  "log",
- "mach2",
+ "mach2 0.4.3",
  "objc2 0.6.3",
  "objc2-app-kit 0.3.2",
  "objc2-core-foundation",
